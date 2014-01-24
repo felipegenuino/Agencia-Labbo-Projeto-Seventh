@@ -1,0 +1,126 @@
+/* 
+
+
+
+*/
+
+body {  background: #ffffff ; color: #222222; padding: 0; margin: 0; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: normal;  font-style: normal;  line-height: 1; position: relative; cursor: default; }
+
+
+ 
+/* 'RESET HTML5
+=============================================================== */
+	article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {    display: block;}
+
+  *, .transition{   transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s;  -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; }
+     .no-transition {transition:none 0s ease 0s; -ms-transition:none 0s ease 0s;  -webkit-transition:none 0s ease 0s; -moz-transition:none 0s ease 0s; -o-transition:none 0s ease 0s }
+
+
+
+/* 'BACKGROUND
+=============================================================== */
+	.fullscreen-bg {	background-image: url("../images/base-theme/background-main.jpg");    background-position: 50% 50%;    background-size: cover;    bottom: 0;    left: 0;    position: fixed;    right: 0;    top: 0;	}
+	.fullscreen-bg:before {    bottom: 0;    box-shadow: 0 0 265px 55px #000000 inset;    content: "";    left: 0;    opacity: 0.6;    position: fixed;    right: 0;    top: 0;	}
+	.fullscreen-bg:after {    content: "";    height: 100%;    left: 0;    position: fixed;    top: 0;    width: 100%;	}
+
+
+
+
+
+/* 'TIPOGRAFY
+=============================================================== */
+	@font-face {
+	  font-family: 'bebas_neueregular';
+	  src: url('fonts/bebasneue-webfont.eot');
+	  src: url('fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/bebasneue-webfont.woff') format('woff'), url('fonts/bebasneue-webfont.ttf') format('truetype'), url('fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+
+
+/* 'BACKGROUND
+=============================================================== */
+	.fullscreen-bg {	background-image: url("../images/base-theme/background-main.jpg");    background-position: 50% 50%;    background-size: cover;    bottom: 0;    left: 0;    position: fixed;    right: 0;    top: 0;	}
+	.fullscreen-bg:before {    bottom: 0;    box-shadow: 0 0 265px 55px #000000 inset;    content: "";    left: 0;    opacity: 0.6;    position: fixed;    right: 0;    top: 0;	}
+	.fullscreen-bg:after {    content: "";    height: 100%;    left: 0;    position: fixed;    top: 0;    width: 100%;	}
+
+
+ 
+
+/* `STRUTURE
+=============================================================== */
+	.main{}
+	.webapp{}
+	.webapp-top{}
+	.webapp-header{padding: 10px 0;}
+	.webapp-body{background: #fff; }
+	.webapp-footer{padding: 20px 0}
+	.webapp-container{  }
+
+
+
+/* `FOOTER
+=============================================================== */
+	.copyright{}	
+	.copyright-text {    color: #FFFFFF;    font-size: 80%;}
+
+
+
+
+/* `MENUS
+=============================================================== */
+
+/* MENU OFFCANVAS*/
+	.menu-off-canvas-left .item-menu-primary.active, .menu-off-canvas-left .item-menu-primary:active {		    background: none repeat scroll 0 0 #222222 !important;		    border-left: 8px solid #CA7233;		    color: #CA7233;		}
+	.menu-off-canvas-left {    margin: 0;}
+	.menu-off-canvas-left .item-menu-primary {    display: block;    width: 100%;}
+	.menu-off-canvas-left .item-menu-primary a, .menu-off-canvas-right .item-menu-primary a  {    border-left: 8px solid rgba(0, 0, 0, 0);    color: #FFFFFF;     text-decoration: none;}
+	.item-menu-primary {		    float: left;		    font-family: "bebas_neueregular";		    font-size: 18px;		    list-style: none outside none;		    padding: 5px 10px;		}
+	.menu-off-canvas-left li label, .menu-off-canvas-right li label { background: none repeat scroll 0 0 #444444;    border-bottom: medium none;    border-top: 1px solid #5E5E5E;    color: #999999;    display: block;    float: left;    font-size: 12px;    font-weight: bold;    margin: 0;    padding: 0.3rem 1rem;    text-transform: uppercase;    width: 100%;}
+
+
+/*menu-top-midias*/
+	.item-menu-top a, .item-menu-midias a { color: #fff}
+	.menu-top, .menu-top-midias{ float: right; margin: 0}
+	.menu-top{  float: right;}
+	.item-menu-top {    margin: 0 4px !important;}
+	.item-menu-top a {    color: #eee;    padding: 0 6px !important; border: 1px solid transparent}
+	.item-menu-top a:hover { color: #FFFFFF; background: #1B4876;border-radius: 2px; border: 1px solid #2D77C2}
+	.item-menu-top a:active { background: #0C2136; border-color: #15385C }
+	.item-menu-top .icon{}
+	.item-menu-top .rotulo{  font-size: 13px;}
+
+
+	.menu-top-midias{ float: right; }
+	.item-menu-midias {margin-left: 10px !important;}
+	.item-menu-midias a{}
+	.item-menu-midias .icon{color: #1B4876; background: #fff; border-radius: 2px}
+	.item-menu-midias .rotulo { float: left; font-size: 0;}
+
+	a:hover .icon-twitter {background: #47D0FC;color: #fff }
+	a:hover .icon-facebook {background: #3B5999; color: #fff}
+	a:hover .icon-youtube {background: #e52d27; color: #fff}
+	a:hover .icon-rss {background: #b31217; color: #fff}
+
+ 
+
+
+/* `HEADINGS
+=============================================================== */
+   /* Default header styles */
+    h1, h2, h3, h4, h5, h6 {  font-family: "bebas_neueregular", Helvetica, Arial, sans-serif; font-style: normal;  text-rendering: optimizeLegibility; margin-top: 0.2rem;  margin-bottom: 0.5rem;  line-height: 1.4;  text-transform: uppercase; font-weight: normal}
+    h1 {  font-size: 3em;   /*  letter-spacing: 0.05em; */  }
+    h2 {  font-size: 2em;   /*  letter-spacing: 0.05em; */  }
+    h3 {  font-size: 30px; /*  letter-spacing: 0em;    */  }
+    h4 {  font-size: 25px; /*  letter-spacing: 0.05em; */  }
+    h5 {  font-size: 20px;   /*  letter-spacing: 0.05em; */  }
+    h6 {  font-size: 0.6em; }
+
+
+
+
+/* `BRAND'S
+=============================================================== */
+	.brand-labbo { background: url("../images/base-theme/brand-labbo-sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); display: block; font-size: 0; height: 20px; width: 45px;}
+	.brand-labbo:hover { background-position: 0 -20px;}

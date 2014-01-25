@@ -4,9 +4,9 @@
 
 */
 
-body {  background: #ffffff ; color: #222222; padding: 0; margin: 0; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: normal;  font-style: normal;  line-height: 1; position: relative; cursor: default; }
-
-
+body { font: 100%/1.5 "Helvetica Neue",Arial,"Liberation Sans",FreeSans,sans-serif;  background: #fff; color: #222222; padding: 0; margin: 0;  font-weight: normal;  font-style: normal;   position: relative; cursor: default; }
+ 
+p{ font-size:0.8em}
  
 /* 'RESET HTML5
 =============================================================== */
@@ -55,22 +55,33 @@ body {  background: #ffffff ; color: #222222; padding: 0; margin: 0; font-family
 	.webapp-top{}
 	.webapp-header{padding: 10px 0;}
 	.webapp-body{background: #fff; }
-	.webapp-footer{padding: 20px 0}
+	.webapp-footer{}
 	.webapp-container{  }
+
+
+
+
+/* `REGIONS
+=============================================================== */
+	.region-header-navigation { float: left; padding: 20px 0 40px;  width: 100%;}
+	.region-carosel{}
+	.region-footer { background: none repeat scroll 0 0 #1C4976; color: #FFFFFF;    padding: 25px;}
 
 
 
 /* `FOOTER
 =============================================================== */
-	.copyright{}	
+	.copyright{padding: 20px 0}	
 	.copyright-text {    color: #FFFFFF;    font-size: 80%;}
 
+	.region-footer h6{}
+	.region-footer h6 strong{ display: block;}
+	.region-footer h6 span { display: block; font-weight: normal; text-transform: none; }
 
 
 
 /* `MENUS
 =============================================================== */
-
 /* MENU OFFCANVAS*/
 	.menu-off-canvas-left .item-menu-primary.active, .menu-off-canvas-left .item-menu-primary:active {		    background: none repeat scroll 0 0 #222222 !important;		    border-left: 8px solid #CA7233;		    color: #CA7233;		}
 	.menu-off-canvas-left {    margin: 0;}
@@ -91,7 +102,6 @@ body {  background: #ffffff ; color: #222222; padding: 0; margin: 0; font-family
 	.item-menu-top .icon{}
 	.item-menu-top .rotulo{  font-size: 13px;}
 
-
 	.menu-top-midias{ float: right; }
 	.item-menu-midias {margin-left: 10px !important;}
 	.item-menu-midias a{}
@@ -103,7 +113,32 @@ body {  background: #ffffff ; color: #222222; padding: 0; margin: 0; font-family
 	a:hover .icon-youtube {background: #e52d27; color: #fff}
 	a:hover .icon-rss {background: #b31217; color: #fff}
 
- 
+/*main menu*/
+.menu-main {
+    border-top: 1px solid #AAAAAA;
+    float: right;
+    font-family: "bebas_neueregular";
+    font-size: 20px;
+    font-weight: normal;
+    margin: 45px 0 0;
+}
+    .item-menu-main { margin: 0 !important; }
+    .item-menu-main.active a:before { border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 7px solid #AAAAAA; content: ""; left: 50%; margin-left: -7px; position: absolute; text-align: center; top: 0; }
+    .item-menu-main.active a:after  {content:""}
+    .item-menu-main a:hover { color: #2C2A97 }
+    .item-menu-main a { border-left: 1px solid rgba(238, 238, 238, 0.5); padding: 10px 9px 0; position: relative;     }
+    .item-menu-main a:last-child { border-right: 1px solid rgba(238, 238, 238, 0.5); }
+
+/* menu language */
+.select-language {
+border: 1px solid;
+list-style: none;
+float: right;
+border-radius: 4px;
+margin: 0;
+display: none;
+}
+
 
 
 /* `HEADINGS
@@ -115,7 +150,14 @@ body {  background: #ffffff ; color: #222222; padding: 0; margin: 0; font-family
     h3 {  font-size: 30px; /*  letter-spacing: 0em;    */  }
     h4 {  font-size: 25px; /*  letter-spacing: 0.05em; */  }
     h5 {  font-size: 20px;   /*  letter-spacing: 0.05em; */  }
-    h6 {  font-size: 0.6em; }
+	h6 {  color: #C4B866; font-family: arial; font-size: 12px; font-weight: bold;}
+
+
+/* `SLIDER
+=============================================================== */
+	.slider{}
+	.slider img{ width: 100%}
+ 
 
 
 
@@ -124,3 +166,19 @@ body {  background: #ffffff ; color: #222222; padding: 0; margin: 0; font-family
 =============================================================== */
 	.brand-labbo { background: url("../images/base-theme/brand-labbo-sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); display: block; font-size: 0; height: 20px; width: 45px;}
 	.brand-labbo:hover { background-position: 0 -20px;}
+    .logotipo-seventh-primary {
+	    background: url("../images/base-theme/logo-seventh-primary.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	    float: left;
+	    font-size: 0;
+	    height: 100px;
+	    width: 170px;
+	}
+
+	.logo-seventh-secundary {
+    background: url("../images/base-theme/logo-seventh-secundary.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    font-size: 0;
+    height: 90px;
+    width: 100%;
+}
+
+

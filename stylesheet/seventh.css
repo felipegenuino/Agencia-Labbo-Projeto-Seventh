@@ -64,10 +64,42 @@ p{ font-size:0.8em}
 /* `REGIONS
 =============================================================== */
 	.region-header-navigation { float: left; padding: 20px 0 40px;  width: 100%;}
-	.region-carosel{}
+	.region-carosel{ display: none;}
 	.region-footer { background: none repeat scroll 0 0 #1C4976; color: #FFFFFF;    padding: 25px;}
+	.region-breadcrumbs {       width: 100%; }
+	.region-title {  }
 
 
+/* `BREADCRUMBS
+=============================================================== */
+	.breadcrumbs {
+	    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	    border: medium none;
+	    margin: 0;
+	    padding: 10px 0;
+	}
+
+
+/* `TITLES
+=============================================================== */
+	.block-title { background: none repeat scroll 0 0 	#0A558C;}
+.block-title h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.block-sub-nav {
+    background: none repeat scroll 0 0 #F5F5F0;
+    border-bottom: 1px solid #CECEBF;
+}
+
+.sub-nav {
+    margin: 0;
+}
+.sub-nav dt, .sub-nav dd, .sub-nav li{font-family: bebas_neueregular; font-size: 18px}
+.sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a{ background: #666}
 
 /* `FOOTER
 =============================================================== */
@@ -77,12 +109,14 @@ p{ font-size:0.8em}
 	.region-footer h6{}
 	.region-footer h6 strong{ display: block;}
 	.region-footer h6 span { display: block; font-weight: normal; text-transform: none; }
+	.region-footer p { font-size: 12px; line-height: 16px; }
+
 
 
 
 /* `MENUS
 =============================================================== */
-/* MENU OFFCANVAS*/
+/* menu offcanvas*/
 	.menu-off-canvas-left .item-menu-primary.active, .menu-off-canvas-left .item-menu-primary:active {		    background: none repeat scroll 0 0 #222222 !important;		    border-left: 8px solid #CA7233;		    color: #CA7233;		}
 	.menu-off-canvas-left {    margin: 0;}
 	.menu-off-canvas-left .item-menu-primary {    display: block;    width: 100%;}
@@ -171,7 +205,7 @@ display: none;
 	    float: left;
 	    font-size: 0;
 	    height: 100px;
-	    width: 170px;
+	    width: 210px;
 	}
 
 	.logo-seventh-secundary {

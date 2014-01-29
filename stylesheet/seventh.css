@@ -1,20 +1,28 @@
- 
+ /*
+  Nome do projeto: Website | Seventh | Visual control
+  Agency: LABBO, http://www.seventh.com.br/;
+  Front-end: Felipe Genuino, design@felipegenuino.com, http://felipegenuino.com ;
+  Designer author:
+  Manage project:  
+  Date: 2014/JAN
+*/
 
-body { font: 100%/1.5 "Helvetica Neue",Arial,"Liberation Sans",FreeSans,sans-serif;  background: #fff; color: #222222; padding: 0; margin: 0;  font-weight: normal;  font-style: normal;   position: relative; cursor: default; }
- 
-p{ font-size:0.8em; line-height: 1.4em;}
-a:hover{color: #1D4779; opacity: 0.8}
-a{color: #1D4779;}
-*, :focus {outline: 0;}
-img{width: 100%}
-textarea.contato{ height: 8rem;}
+
+    body { font: 100%/1.5 "Helvetica Neue",Arial,"Liberation Sans",FreeSans,sans-serif;  background: #fff; color: #555; padding: 0; margin: 0;  font-weight: normal;  font-style: normal;   position: relative; cursor: default; }
+     
+    p{ font-size:0.8em; line-height: 1.4em;}
+    a:hover{color: #1D4779; opacity: 0.8}
+    a{color: #1D4779;}
+    *, :focus {outline: 0;}
+    img{width: 100%}
+    textarea.contato{ height: 8rem;}
  
 /* 'RESET HTML5
 =============================================================== */
 	article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {    display: block;}
 
-  	 .transition{   transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s;  -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; }
-     .no-transition {transition:none 0s ease 0s; -ms-transition:none 0s ease 0s;  -webkit-transition:none 0s ease 0s; -moz-transition:none 0s ease 0s; -o-transition:none 0s ease 0s }
+  	*, .transition{   transition: all 0.5s ease 0s; -ms-transition: all 0.5s ease 0s;  -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; }
+     .no-transition, .resp-tabs-container > * , #language{transition:none 0s ease 0s; -ms-transition:none 0s ease 0s;  -webkit-transition:none 0s ease 0s; -moz-transition:none 0s ease 0s; -o-transition:none 0s ease 0s }
 
 	.alignleft { float: left; margin-right: 20px; text-align: left;}
 	.alignright { float: right; margin-left: 20px; text-align: right;}
@@ -72,6 +80,7 @@ textarea.contato{ height: 8rem;}
 	.region-title {clear: both;   }
 
 
+    .noticias-listagem .news-entry{ padding: 20px 0}
 
 
 	section.spotlight > .row {    padding: 30px 0 10px;}
@@ -90,13 +99,41 @@ textarea.contato{ height: 8rem;}
 }
 
 
-.panel {
-    background: none repeat scroll 0 0 rgb(245, 245, 240);
-    border-bottom: 2px solid rgb(66, 109, 150);
-    color: #436B99;
+.panel {  background: none repeat scroll 0 0 rgb(245, 245, 240);    border-bottom: 2px solid rgb(66, 109, 150);    color: #436B99;}
+.panel p{ color: inherit;}
+
+
+
+.panel.secundary {
+    border-bottom: 3px solid;
+    border-top: 3px solid;
+     border-left: none;
+      border-right: none;
 }
 
-.panel p{ color: inherit;}
+.panel.secundary p{color: #666}
+.panel.secundary h2{font-size: 30px;}
+
+.panel.secundary h3 {
+    color: #666666;
+    font-family: arial;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: none;
+}
+.panel.secundary .button {
+    border-radius: 3px;
+     -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+       -o-border-radius: 3px;
+     font-size: 14px;
+    font-weight: bold !important;
+    padding: 10px 20px;
+    text-transform: uppercase;
+
+}
+.panel.secundary.goldenrod {border-color: #C0A637}
+.panel.secundary.goldenrod h2{color: #C0A637}
 
 
 .lista-vertical {
@@ -104,6 +141,39 @@ textarea.contato{ height: 8rem;}
     list-style: none outside none;
     margin: 0;
 }
+
+.lista-vertical > li {
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.list-arrow {
+    font-size: 14px;
+    list-style-image: url("../images/base-theme/arrow-right.png");
+    margin-left: 40px;
+}
+
+
+
+
+
+
+.block-imagem-produto > strong {
+    display: block;
+}
+
+.block-imagem-produto {
+    font-size: 12px;
+    margin-bottom: 20px
+}
+
+.block-imagem-produto img {
+    margin-bottom: 5px;
+}
+
+
+
+
 
 	.panel.panel-content{ background: none repeat scroll 0 0 rgba(0, 0, 0, 0);    border: medium none;}
 	.panel.panel-content{ color: inherit;}
@@ -143,9 +213,13 @@ button, .button {    background-color: #0A558C;}
 /* `TITLES
 =============================================================== */
 	.block-title { background: none repeat scroll 0 0 	#0A558C;}
- 	.block-sub-nav { background: none repeat scroll 0 0 #F5F5F0; border-bottom: 1px solid #CECEBF;}
-
-	.sub-nav { margin: 0;}
+.block-sub-nav {
+    background: none repeat scroll 0 0 #F5F5F0;
+    border-bottom: 1px solid #CECEBF;
+    margin-bottom: 30px;
+}
+.sub-nav dt, .sub-nav dd, .sub-nav li{margin-bottom: 0.3rem;}
+	.sub-nav { margin: 0; padding: 1em 0 0.5rem;}
 	.sub-nav dt, .sub-nav dd, .sub-nav li{font-family: "bebas_neueregular"; font-size: 18px}
 	.sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a{ background: #666}
 .header-block{  background: none repeat scroll 0 0 #0A558C;    color: #FFFFFF;}
@@ -281,6 +355,12 @@ button, .button {    background-color: #0A558C;}
     padding: 3px 40px 3px 5px;
 }
 
+#language {
+    margin-top: 10px;
+    padding: 0;
+    width: 112px;
+}
+
 /* menu language */
 .nav-mobile-menu{ border-top: 3px solid #C4B95A}
 .icon-menu {
@@ -391,92 +471,52 @@ footer span.postfix, footer label.postfix {
 	.spotlight.video h2 {    background: none repeat scroll 0 0 #C4B95A;    border: medium none;    border-radius: 5px 5px 0 0;    color: #FFFFFF;    display: inline-block;    margin: 0;    padding: 0 20px;}
 	.spotlight.video .flex-video{} 
 
-	.topic { border-bottom: 2px solid #1C4976; color: #1C4976; line-height: 30px; margin-bottom: 10px;}
-.more {
-    border-bottom: 1px solid #1C4976;
-    bottom: 0;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    width: 100%;
+	.topic { border-bottom: 1px solid #1C4976; color: #1C4976; line-height: 30px; margin-bottom: 10px; font-size: 30px}
+        .topic-large{border-bottom:2px solid;}
+
+    .more {border-bottom: 1px solid #1C4976; bottom: 0; display: inline-block; position: absolute; right: 0; width: 100%;}
+    .more > span {    background: none repeat scroll 0 0 #1C4976;   height: 25px; color: #FFFFFF;    display: inline-block;    float: right;    text-align: center;    vertical-align: bottom;    width: 30px;}
+    .news-entry:hover .more > span {    height: 40px;} 
+    .news-entry.list {    border-bottom: 1px solid #1C4976;}
+    .news-entry.list .more {    float: right;    width: auto;}
+    .news-entry h5 {    font-family: arial;    font-size: 16px;    margin: 0;    text-transform: none;}
+    .news-entry h4 {    display: inline-block;    font-family: arial;    font-size: 18px;    margin-bottom: 30px;    text-transform: none;    line-height: 22px;}
+    .news-date { color: #666666;display: block; font-family: Arial,Helvetica,sans-serif; font-size: 14px; margin-top: 20px}
+    .page-meta-date{	color: #666666;    display: block;    font-family: Arial,Helvetica,sans-serif;    font-size: 10px;      font-weight: bold;    margin-top: 20px}
+    .more-news {  /*  background: none repeat scroll 0 0 rgba(205, 205, 182, 0.2);  */  display: inline-block;    padding: 20px 10px;    text-align: right;    width: 100%;}
+    .more-news span {    display: inline-block;    float: left;    font-size: 18px;}
+    .more-news h5 {    display: inline-block;    margin: 0;    text-align: center; margin-right:0}
+    .more-news:hover h5 {    margin-right: 10px;}
+    .more-news:hover span{ }
+    .meta-date {    font-size: 11px;    margin: 0; display: inline-block;}
+
+
+.bloco-paginacao {
+    margin-top: 40px;
+    position: relative;
 }
-	.more > span {    background: none repeat scroll 0 0 #1C4976;    color: #FFFFFF;    display: inline-block;    float: right;    text-align: center;    vertical-align: bottom;    width: 30px;}
-
-	 
-
-.news-entry.list {
-    border-bottom: 1px solid #1C4976;
-}
 
 
-.news-entry.list .more {
-    float: right;
+.bloco-paginacao .pagination {
+    display: table;
+    font-family: "bebas_neueregular";
+    margin: auto;
+    text-align: center;
     width: auto;
 }
-
-
- 
-.news-entry h5 {
-    font-family: arial;
-    font-size: 16px;
-    margin: 0;
-    text-transform: none;
-}
  
 
-.news-entry h4 {
-    display: inline-block;
-    font-family: arial;
-    font-size: 18px;
-    margin-bottom: 30px;
-    text-transform: none;
-    line-height: 22px;
-}
 
-
-.news-date {
-    color: #666666;
-    display: block;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 14px;
-    margin-top: 20px
-}
-
-.page-meta-date{
-	color: #666666;
-    display: block;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 10px;
-      font-weight: bold;
-    margin-top: 20px
-}
-
-.more-news {
-    background: none repeat scroll 0 0 rgba(205, 205, 182, 0.2);
-    display: inline-block;
-    padding: 20px 10px;
-    text-align: right;
-    width: 100%;
-}
-
-.more-news span {
-    display: inline-block;
-    float: left;
-    font-size: 18px;
-}
-
-
-.more-news h5 {
-    display: inline-block;
-    margin: 0;
-    text-align: center;
-}
-
+.bloco-paginacao .pagination li{font-size: 1.2em;  margin-left: 1rem;}
+.bloco-paginacao .pagination .current a{border-radius:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;background: #0A558C}
+.bloco-paginacao .pagination a{ }
 
 /* agenda */
-.news-info { margin-top: 10px;}
-.news-info span {    display: block;    font-size: 12px;    line-height: 18px;}
-
+    .news-info { padding-left: 20px; padding-top: 13px; }
+    .news-info:hover {    background: none repeat scroll 0 0 #EEEEEE;}
+    .news-info span, .news-info strong {    display: block;    font-size: 12px;    line-height: 18px;}
+    .news-info span { }
+    .news-info strong {  line-height: 0.8rem; }
 
 
 
@@ -485,203 +525,62 @@ footer span.postfix, footer label.postfix {
 
 /*'Responsive tabs
 =============================================== */
-#responsive-tab{ margin-bottom: 20px !important}
+        #responsive-tab{ margin-bottom: 20px !important}
+        .resp-tabs-list{margin: 0;}
+        .resp-tabs-list li {    font-weight: 600;    font-size: 13px;    display: inline-block;    padding: 5px 15px;    margin: 0;    list-style: none;    cursor: pointer;    float: left;}
+        .resp-tabs-list li h3{    margin: 0;}
+        .resp-tabs-container {    padding: 0px;    background-color: #fff;    clear: left;}
+        h2.resp-accordion {    cursor: pointer;    padding: 5px;    display: none;}
+        .resp-tab-content {    display: none;    padding: 15px;}
+        .resp-tab-active {    border: 1px solid #c1c1c1;    border-bottom: none;    margin-bottom: -1px !important; }
+        .resp-tab-active {    background-color: #ECEEF5;    border-bottom: medium none;    border-radius: 5px 5px 0 0;    -moz-border-radius: 5px 5px 0 0;    -webkit-border-radius: 5px 5px 0 0;    -o-border-radius: 5px 5px 0 0;    -ms-border-radius: 5px 5px 0 0;}
+        .resp-content-active, .resp-accordion-active {    display: block;}
+        .resp-tab-content {    border: 1px solid #c1c1c1;    background: #ECEEF5;}
+        h2.resp-accordion {    font-size: 13px;    border: 1px solid #c1c1c1;    border-top: 0px solid #c1c1c1;    margin: 0px;    padding: 10px 15px;}
+        h2.resp-tab-active {    border-bottom: 0px solid #c1c1c1 !important;        margin-bottom: 0px !important;        padding: 10px 15px !important;    }
+        h2.resp-tab-title:last-child {    border-bottom: 12px solid #c1c1c1 !important;    background: blue;}
 
-.resp-tabs-list{margin: 0;}
 
-.resp-tabs-list li {
-    font-weight: 600;
-    font-size: 13px;
-    display: inline-block;
-    padding: 5px 15px;
-    margin: 0;
-    list-style: none;
-    cursor: pointer;
-    float: left;
+
+
+.tab-secundary .resp-tabs-list li h3 {    font-size: 18px;    margin: 0;}
+.tab-secundary .resp-tab-active{ background-color: #F8F8F8; border-color: #ddd}
+ .tab-secundary .resp-tab-content {    background: none repeat scroll 0 0 #F8F8F8;    border: 1px solid #DDDDDD;}
+
+.tab-secundary .topic {
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 23px;
+    margin-top: 20px;
 }
 
-.resp-tabs-list li h3{    margin: 0;}
+        /*-----------Vertical tabs-----------*/
+        .resp-vtabs ul.resp-tabs-list {float: left; width: 30%;}
+        .resp-vtabs .resp-tabs-list li {    display: block;    padding: 15px 15px !important;    margin: 0;    cursor: pointer;    float: none;}
+        .resp-vtabs .resp-tabs-container {    padding: 0px;    background-color: #fff;    border: 1px solid #c1c1c1;    float: left;    width: 68%;    min-height: 250px;    border-radius: 4px;    clear: none;}
+        .resp-vtabs .resp-tab-content {    border: none;}
+        .resp-vtabs li.resp-tab-active {    border: 1px solid #c1c1c1;    border-right: none;    background-color: #fff;    position: relative;    z-index: 1;    margin-right: -1px !important;    padding: 14px 15px 15px 14px !important;}
+        .resp-arrow {    width: 0;    height: 0;    float: right;    margin-top: 3px;    border-left: 6px solid transparent;    border-right: 6px solid transparent;    border-top: 12px solid #c1c1c1;}
+        h2.resp-tab-active span.resp-arrow {    border: none;    border-left: 6px solid transparent;    border-right: 6px solid transparent;    border-bottom: 12px solid #9B9797;}
 
-.resp-tabs-container {
-    padding: 0px;
-    background-color: #fff;
-    clear: left;
-}
+        /*-----------Accordion styles-----------*/
+        h2.resp-tab-active { background: #DBDBDB !important;}
+        .resp-easy-accordion  h2.resp-accordion {        display: block;}
+        .resp-easy-accordion .resp-tab-content {    border: 1px solid #c1c1c1;}
+        .resp-easy-accordion .resp-tab-content:last-child {    border-bottom: 1px solid #c1c1c1 !important;}
+        .resp-jfit {    width: 100%;    margin: 0px;}
+        .resp-tab-content-active {    display: block;}
+        h2.resp-accordion:first-child {    border-top: 1px solid #c1c1c1 !important;}
 
-h2.resp-accordion {
-    cursor: pointer;
-    padding: 5px;
-    display: none;
-}
-
-.resp-tab-content {
-    display: none;
-    padding: 15px;
-}
-
-.resp-tab-active {
-    border: 1px solid #c1c1c1;
-    border-bottom: none;
-    margin-bottom: -1px !important;
- }
-
+        /*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+        @media only screen and (max-width: 768px) {
+            ul.resp-tabs-list {        display: none;    }
+            h2.resp-accordion {        display: block;    }
+            .resp-vtabs .resp-tab-content {        border: 1px solid #C1C1C1;    }
+            .resp-vtabs .resp-tabs-container {        border: none;        float: none;        width: 100%;        min-height: initial;        clear: none;    }    
+            .resp-accordion-closed {display:none !important; }
+            .resp-vtabs .resp-tab-content:last-child {        border-bottom: 1px solid #c1c1c1 !important;    }
+        }
  
-
-.resp-tab-active {
-    background-color: #ECEEF5;
-    border-bottom: medium none;
-    border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-    -o-border-radius: 5px 5px 0 0;
-    -ms-border-radius: 5px 5px 0 0;
-
-}
-
-.resp-content-active, .resp-accordion-active {
-    display: block;
-}
-
-.resp-tab-content {
-    border: 1px solid #c1c1c1;
-    background: #ECEEF5;
-}
-
-h2.resp-accordion {
-    font-size: 13px;
-    border: 1px solid #c1c1c1;
-    border-top: 0px solid #c1c1c1;
-    margin: 0px;
-    padding: 10px 15px;
-}
-
-h2.resp-tab-active {
-    border-bottom: 0px solid #c1c1c1 !important;
-    margin-bottom: 0px !important;
-    padding: 10px 15px !important;
-}
-
-h2.resp-tab-title:last-child {
-    border-bottom: 12px solid #c1c1c1 !important;
-    background: blue;
-}
-/*-----------Vertical tabs-----------*/
-.resp-vtabs ul.resp-tabs-list {
-    float: left;
-    width: 30%;
-}
-
-.resp-vtabs .resp-tabs-list li {
-    display: block;
-    padding: 15px 15px !important;
-    margin: 0;
-    cursor: pointer;
-    float: none;
-}
-
-.resp-vtabs .resp-tabs-container {
-    padding: 0px;
-    background-color: #fff;
-    border: 1px solid #c1c1c1;
-    float: left;
-    width: 68%;
-    min-height: 250px;
-    border-radius: 4px;
-    clear: none;
-}
-
-.resp-vtabs .resp-tab-content {
-    border: none;
-}
-
-.resp-vtabs li.resp-tab-active {
-    border: 1px solid #c1c1c1;
-    border-right: none;
-    background-color: #fff;
-    position: relative;
-    z-index: 1;
-    margin-right: -1px !important;
-    padding: 14px 15px 15px 14px !important;
-}
-
-.resp-arrow {
-    width: 0;
-    height: 0;
-    float: right;
-    margin-top: 3px;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 12px solid #c1c1c1;
-}
-
-h2.resp-tab-active span.resp-arrow {
-    border: none;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 12px solid #9B9797;
-}
-
-/*-----------Accordion styles-----------*/
-h2.resp-tab-active {
-    background: #DBDBDB !important;
-}
-.resp-easy-accordion  h2.resp-accordion {
-        display: block;
-}
-.resp-easy-accordion .resp-tab-content {
-    border: 1px solid #c1c1c1;
-}
-
-.resp-easy-accordion .resp-tab-content:last-child {
-    border-bottom: 1px solid #c1c1c1 !important;
-}
-
-.resp-jfit {
-    width: 100%;
-    margin: 0px;
-}
-
-.resp-tab-content-active {
-    display: block;
-}
-
-h2.resp-accordion:first-child {
-    border-top: 1px solid #c1c1c1 !important;
-}
-
-/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
-@media only screen and (max-width: 768px) {
-    ul.resp-tabs-list {
-        display: none;
-    }
-
-    h2.resp-accordion {
-        display: block;
-    }
-
-    .resp-vtabs .resp-tab-content {
-        border: 1px solid #C1C1C1;
-    }
-
-    .resp-vtabs .resp-tabs-container {
-        border: none;
-        float: none;
-        width: 100%;
-        min-height: initial;
-        clear: none;
-    }
-    .resp-accordion-closed {
-        display:none !important;
-    }
-    .resp-vtabs .resp-tab-content:last-child {
-        border-bottom: 1px solid #c1c1c1 !important;
-    }
-}
-
-
-
-
-
 
 /*'//Responsive tabs
 =============================================== */
@@ -699,6 +598,7 @@ h2.resp-accordion:first-child {
 @media only screen { 
 
 	.news-date {  margin-top: 10px}
+
  
 }
 
@@ -721,6 +621,7 @@ h2.resp-accordion:first-child {
 /* Large screens */
 @media only screen and (min-width: 64.063em) { 
 		.menu-top{float: right;}
+        .logotipo-seventh-primary{ float: left;}
 
 		} /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */

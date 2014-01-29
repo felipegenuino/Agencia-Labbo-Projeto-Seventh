@@ -1639,7 +1639,7 @@ meta.foundation-mq-topbar {
 .breadcrumbs > *:before {
   content: "/";
   color: #aaaaaa;
-  margin: 0 0.75rem;
+  margin: 0 0.30rem;
   position: relative;
   top: 1px;
 }
@@ -1748,9 +1748,11 @@ button,
   background-color: #008cba;
   border-color: #007095;
   color: white;
+  /*
   -webkit-transition: background-color 300ms ease-out;
   -moz-transition: background-color 300ms ease-out;
   transition: background-color 300ms ease-out;
+  */
   padding-top: 1.0625rem;
   padding-bottom: 1rem;
   -webkit-appearance: none;

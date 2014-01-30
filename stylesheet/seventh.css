@@ -379,12 +379,17 @@ button, .button {    background-color: #0A558C;}
     .item-menu-main a:last-child { border-right: 1px solid rgba(238, 238, 238, 0.5); }
 
 /* menu language */
+
+.show-for-large-up .select-language{float: right}
+
+
 .select-language {
     float: left;
     font-size: 12px;
     margin-left: 10px;
     margin-top: 15px;
 }
+
 .select-language li{ margin: 0;  border-right: 1px solid #BFA70D;  padding: 0 5px;}
 .select-language li a{    color: #BFA70D;}
 .select-language li.active a{   font-weight: bold;}

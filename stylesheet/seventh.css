@@ -80,20 +80,40 @@
 	.region-title {clear: both;   }
 
 
-.content-tab .row {    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);}
+    .content-tab .row {    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);}
     .noticias-listagem .news-entry{ padding: 20px 0}
 
 
-	section.spotlight > .row {    padding: 30px 0 10px;}
-	section.news > .row {    padding: 20px 0;}
-	section.info > .row {    padding: 40px 0;}
 
+    .news .row.collapse,
+    .news-entry .row.collapse,
+    .destaque .row.collapse {    padding: 0;}
+
+	section.spotlight > .row {    padding: 30px 20px 10px 20px;}
+	section.news > .row {    padding: 20px;}
+	section.info > .row {    padding: 40px 20px}
+    .region-page > .row {    padding: 0 20px;}
+    .region-breadcrumbs .row,
+    .region-header-navigation .row,
+    .region-carosel .row {    padding: 0 20px;}
 	main {    margin: 0 20px;    margin-bottom: 0}
-	main .row, .footer-main .row{background: #fff}
-	.row.collapse{background: none}
-	.footer-main .row{background: #1C4976}
+    .footer-main .row{background: #fff; padding: 0 20px}
+    main > .row {background: #fff; padding: 0 20px}
+    .footer-main .row{background: #1C4976; padding: 20px}
 
+ 
+main .row {background: #fff;}
+
+
+    .widget-agenda .row.collapse{padding: 0}
+    
+	.row.collapse{background: none}
+	
 	.block-twitter a {    color: #C4B866;}
+
+    .block-newslatter .row.collapse {
+    padding: 0;
+}
 
 .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
   color:#0A558C
@@ -365,7 +385,7 @@ button, .button {    background-color: #0A558C;}
     margin-right: 10px;
     margin-top: 15px;
 }
-.select-language li{ margin: 0;  border-right: 1px solid #BFA70D;  padding: 0 15px;}
+.select-language li{ margin: 0;  border-right: 1px solid #BFA70D;  padding: 0 5px;}
 .select-language li a{    color: #BFA70D;}
 .select-language li.active a{   font-weight: bold;}
 .select-language li.active {/*    background: none repeat scroll 0 0 #BFA70D;    border: 1px solid #A89308 ; */}
@@ -538,7 +558,7 @@ footer span.postfix, footer label.postfix {
 .bloco-paginacao .pagination a{ }
 
 /* agenda */
-    .news-info { padding-left: 20px; padding-top: 13px; }
+    .news-info {   padding-top: 13px; }
     .news-info:hover {    background: none repeat scroll 0 0 #EEEEEE;}
     .news-info span, .news-info strong {    display: block;    font-size: 12px;    line-height: 18px;}
     .news-info span { }
@@ -646,8 +666,7 @@ footer span.postfix, footer label.postfix {
 	.news-date {  margin-top: 30px}
     #responsive-tab .tabs-content.vertical {    width: 100%; margin: 0 0 10px;}
     #responsive-tab .tabs.vertical {     display: inline-block;
-    margin-bottom: 40px !important;
-    width: 100%;}
+    margin-bottom: 40px !important;    width: 100%;}
     #responsive-tab .tabs.vertical dd {    width: auto;}
     #responsive-tab .tabs.vertical a {    padding: 5px 10px;}
     #responsive-tab .tabs.vertical h5{font-size: 1em}
@@ -655,6 +674,28 @@ footer span.postfix, footer label.postfix {
      #responsive-tab .tabs dd.active a h5 {  color: #fff}
 
      .block-imagem-produto {     margin-bottom: 5px;}
+     .owl-controls{top: 5%;}
+
+
+    section.spotlight > .row {    padding: 30px 0px 10px;}
+    section.news > .row {    padding: 20px 0;}
+    section.info > .row {    padding: 40px 0px}
+    .region-page > .row {    padding: 0px;}
+    .region-breadcrumbs .row,
+    .region-header-navigation .row,
+    .region-carosel .row {    padding:0px;}
+    main {    margin: 0px;}
+    .footer-main .row{padding: 0px}
+    main > .row {padding: 0px}
+    .footer-main .row{padding: 20px 0}
+.webapp-header {    padding:0;}
+.owl-buttons{display: none;}
+
+.panel.panel-content {
+    color: inherit;
+    padding: 0;
+}
+
 
  } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 

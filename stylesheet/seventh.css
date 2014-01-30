@@ -380,9 +380,9 @@ button, .button {    background-color: #0A558C;}
 
 /* menu language */
 .select-language {
-    float: right;
+    float: left;
     font-size: 12px;
-    margin-right: 10px;
+    margin-left: 10px;
     margin-top: 15px;
 }
 .select-language li{ margin: 0;  border-right: 1px solid #BFA70D;  padding: 0 5px;}
@@ -412,7 +412,7 @@ button, .button {    background-color: #0A558C;}
 .icon-menu {
     background: none repeat scroll 0 0 #C4B95A;
     color: #FFFFFF;
-    float: right;
+    float: left;
     font-size: 2em;
     padding: 2px;
 }

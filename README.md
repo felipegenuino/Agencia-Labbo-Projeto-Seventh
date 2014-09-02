@@ -1,6 +1,6 @@
 #Projeto Seventh
 Frontend para agência Labbo 
->- Site em produção: [https://www.seventh.com.br](https://www.seventh.com.br)
+**Site em produção**: [https://www.seventh.com.br](https://www.seventh.com.br)
 
 
 ##Images:
@@ -9,7 +9,7 @@ ___
 ![imagem](https://raw.githubusercontent.com/felipegenuino/Agencia-Labbo-Projeto-Seventh//gh-pages/images/gif/seventh-2.gif)
 
 
-##Links:
+###Links
 >- **Demo página inicial** [http://felipegenuino.github.io/Agencia-Labbo-Projeto-Seventh/index.html](http://felipegenuino.github.io/Agencia-Labbo-Projeto-Seventh/index.html)
 >- **Demo página de notícias**  [http://felipegenuino.github.io/Agencia-Labbo-Projeto-Seventh/noticias.html](http://felipegenuino.github.io/Agencia-Labbo-Projeto-Seventh/noticias.html)
 >- **Demo página de produtos**  [http://felipegenuino.github.io/Agencia-Labbo-Projeto-Seventh/produtos.html](http://felipegenuino.github.io/Agencia-Labbo-Projeto-Seventh/produtos.html)

@@ -7,6 +7,8 @@ Frontend para agência Labbo
 ![imagem](https://raw.githubusercontent.com/felipegenuino/Agencia-Labbo-Projeto-Seventh/gh-pages/images/gif/seventh-1.gif)
 ___
 ![imagem](https://raw.githubusercontent.com/felipegenuino/Agencia-Labbo-Projeto-Seventh/gh-pages/images/gif/seventh-2.gif)
+___
+![imagem](https://raw.githubusercontent.com/felipegenuino/Agencia-Labbo-Projeto-Seventh/gh-pages/images/gif/seventh-3.gif)
 
 
 ###Links

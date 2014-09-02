@@ -1,79 +1,467 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html class="no-js" lang="pt-br">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Agencia Labbo - Projeto Seventh : Front end para agencia Labbo">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seventh | Visual control</title>
+    <!--// defaults foundation -->
+    <link rel="stylesheet" href="stylesheet/foundation.css" />
+	<link rel="shortcut icon" href="images/base-theme/favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!--// fonticons -->
+    <link rel="stylesheet" href="stylesheet/font-icons/fontello.css">
+    <link rel="stylesheet" href="stylesheet/font-icons/animation.css">
+    <!--[if IE 7]> <link rel="stylesheet" href="stylesheet/font-icons/fontello-ie7.css">  <![endif]-->
+    
+     <!-- Important Owl stylesheet --> 	<link rel="stylesheet" 	href="lib/owl-carousel/owl.carousel.css">
+     <!-- Default Theme -->             <link rel="stylesheet" 	href="lib/owl-carousel/owl.theme.css">
 
-    <title>Agencia Labbo - Projeto Seventh</title>
+    <!--// stylesheet WebApp -->
+    <link rel="stylesheet" href="stylesheet/seventh.css" />
+
+    <script src="javascript/vendor/modernizr.js"></script>
   </head>
-
   <body>
+   
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/felipegenuino/agencia-labbo-projeto-seventh">View on GitHub</a>
 
-          <h1 id="project_title">Agencia Labbo - Projeto Seventh</h1>
-          <h2 id="project_tagline">Front end para agencia Labbo</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/felipegenuino/agencia-labbo-projeto-seventh/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/felipegenuino/agencia-labbo-projeto-seventh/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<div class="fullscreen-bg"> </div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+	<div class="off-canvas-wrap">
+  		<div class="inner-wrap"> 
+ 
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+		<aside class="left-off-canvas-menu"> <!-- whatever you want goes here -->
+			      <ul class="menu-off-canvas-left">
+					<li> <label> Páginas </label> </li>
+			      	<li class="item-menu-primary active"> <a href="index.html">Página inicial</a></li>
+			        <li class="item-menu-primary"> <a href="empresa.html">Empresa</a></li>
+			        <li class="item-menu-primary"> <a href="produtos-e-servicos.html">Produtos & Serviços</a></li>
+			        <li class="item-menu-primary"> <a href="noticias.html">Notícias</a></li>
+			        <li class="item-menu-primary"> <a href="treinamentos.html">Treinamentos</a></li>
+			        <li class="item-menu-primary"> <a href="suporte-e-downloads.html">Suporte & Downloads</a></li>
+			        <li class="item-menu-primary"> <a href="contato.html">Contato</a></li>
+					
+					<li> <label> Acessos </label> </li>
+			        <li class="item-menu-primary"> <a href="#"> <span class="icon-comment-1"></span> Chat</a></li>
+			        <li class="item-menu-primary"> <a href="#"> <span class="icon-basket"></span> Loja</a></li>
+			        <li class="item-menu-primary"> <a href="#"> <span class="icon-lock"></span> Acesso restrito</a></li>
+			        <li class="item-menu-primary"> <a href="#"> <span class="icon-user-add"></span> Cadastre-se</a></li>
+					
+					<li> <label> Mídias sociais </label> </li>
+			        <li class="item-menu-primary"> <a href="#"> <span class="icon-rss"></span> Feed</a></li>
+			        <li class="item-menu-primary"> <a href="#"> <span class="icon-youtube"></span> Youtube</a></li>
+			        <li class="item-menu-primary"> <a href="#"> <span class="icon-facebook"></span> Facebook</a></li>
+			        <li class="item-menu-primary"> <a href="#"> <span class="icon-twitter"></span> Twitter</a></li>
+		    </aside>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+<!-- main content goes here -->
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Agencia Labbo - Projeto Seventh maintained by <a href="https://github.com/felipegenuino">felipegenuino</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+ 
+
+<header>
+ 	<div class="row">
+		<div class="webapp-header clearfix">
+			<div class="large-12 medium-12 columns hide-for-small right">
+					<ul class="menu-top-midias inline-list right">
+						<li class="item-menu-midias"> <a href="#"> <span class="icon icon-rss">		 </span> <span class="rotulo">Feed	 	</span>	</a></li>
+				        <li class="item-menu-midias"> <a href="#"> <span class="icon icon-youtube">	 </span> <span class="rotulo">Youtube  	</span>	</a></li>
+				        <li class="item-menu-midias"> <a href="#"> <span class="icon icon-facebook"> </span> <span class="rotulo">Facebook 	</span>	</a></li>
+				        <li class="item-menu-midias"> <a href="#"> <span class="icon icon-twitter">	 </span> <span class="rotulo">Twitter  	</span>	</a></li>
+				   </ul>
+				   <ul class="menu-top inline-list">
+	                    <!--li class="item-menu-top"> <a href="#" class="left-off-canvas-toggle"> <span class="icon icon-th-list">  </span> <span class="rotulo">Menu				</span>	</a></li-->
+						<li class="item-menu-top"> <a href="#"> <span class="icon icon-comment-1">  </span> <span class="rotulo">Chat				</span>	</a></li>
+						<li class="item-menu-top"> <a href="#"> <span class="icon icon-basket">	  </span> <span class="rotulo">Loja				</span>	</a></li>
+						<li class="item-menu-top"> <a href="#"> <span class="icon icon-lock">	  </span> <span class="rotulo">Acesso restrito 	</span>	</a></li>
+						<li class="item-menu-top"> <a href="#"> <span class="icon icon-user-add"> </span> <span class="rotulo">Cadastre-se 		</span>	</a></li>
+					</ul>
+		 	</div> <!-- //large-12 columns -->
+		</div> <!-- //header-top -->
+	</div> <!-- //row -->
+</header>
+
+
+<main>
+		<div class="nav-mobile-menu hide-for-large-up"> 
+			<a href="#" class="icon-menu left-off-canvas-toggle">  <span class="icon">  </span>   </a> 
+			<ul class="select-language inline-list"> 
+				<li class="active"><a href="#" title="Selecione o idioma português">Português</a></li>	 
+				<li><a href="#" title="Select english language">English</a></li> 
+				<li><a href="#" title="Seleccione el idioma Español">Español</a></li>	 
+			</ul>
+		</div> <!-- //mobile-menu -->
+
+	<header class="region-header-navigation">
+		
+
+		<div class="row">
+		 			<div class="large-3 large-uncentered medium-centered medium-12 small-12 small-centered  columns">
+ 					                <a href="#" title="" class="logotipo-seventh-primary"> Logotipo principal</a> 
+ 					    </div><!-- //large-3 columns-->
+ 
+<div class="large-9 medium-9 columns show-for-large-up">
+	<a class="select-language dropdown" href="#" data-dropdown="language" data-options="is_hover:true">Português</a> 
+		<ul id="language" class="f-dropdown" data-dropdown-content>
+			<li><a href="#" title="Selecione o idioma português">Português</a></li> 
+			<li><a href="#" title="Seleccione el idioma Español">Español</a></li> 
+			<li><a href="#" title="Seleccione el idioma Español">Español</a></li> 
+ 		</ul>
+ 
+</div><!-- //large-9 medium-9 columns-->
+					<div class="large-9 medium-9 columns">
+			            <nav>
+			                <ul class="menu-main inline-list show-for-large-up">
+			                    <li class="item-menu-main active"> <a href="index.html" title="Home"><span class="icon-home"></span></a></li>
+			                    <li class="item-menu-main"> <a href="empresa.html" title="Empresa">Empresa</a></li>
+			                    <li class="item-menu-main"> <a href="produtos.html" title="Produtos & Serviços">Produtos & Serviços</a></li>
+			                    <li class="item-menu-main"> <a href="noticias.html" title="Noticias">Noticias</a></li>
+			                    <li class="item-menu-main"> <a href="treinamentos.html" title="Treinamentos">Treinamentos</a></li>
+			                    <li class="item-menu-main"> <a href="suporte-downloads.html" title="Suporte e Downloads">Suporte e Downloads</a></li>
+			                    <li class="item-menu-main"> <a href="contato.html" title="Contato">Contato</a></li>
+			                </ul>
+			            </nav>
+ 					</div><!-- //large-3 columns-->
+		</div> <!-- // row -->			   
+	</header>
+
+
+
+	<section class="region-carosel">
+		<div class="row">
+		    <div class="large-12 columns">
+		                <!--  carosel  -->               
+		                <div id="slider-main" class="owl-carousel"> 
+		                    <div class="slider">  <img src="images/base-theme/image-banner-1.jpg">  </div><!-- // slider --> 
+		                    <div class="slider">  <img src="images/base-theme/image-banner-1.jpg">  </div><!-- // slider --> 
+		                    <div class="slider">  <img src="images/base-theme/image-banner-1.jpg">  </div><!-- // slider -->
+		                </div> <!-- // #slider-main .owl-carousel -->
+		                <!--   carosel -->                
+		    </div><!-- //large-12 columns-->
+		    </div><!-- // row -->
+	</section><!-- //region-carosel -->    
+					  
+
+
+	<section class="spotlight">
+			<div class="row">
+
+
+						<div class="large-8 columns">
+									<div class="news-entry spotlight">
+										<h2 class="topic topic-large"> Case do mês </h2>
+										<div class="row collapse">
+											<div class="medium-5 hide-for-small">
+												<a href="#" title="" class="alignleft"><img src="images/base-theme/thumbnail.jpg"> </a>
+											</div><!-- //medium-5 columns --> 
+											
+											<div class="medium-7 columns">
+			 										<a href="#" title=""><h3>Lorem ipsum dolor sit amet</h3></a>
+								        	 <p>A família do contador Douglas S. Laranjeira, de Florianópolis, acorda todos os dias com as venezianas da casa sendo abertas, deixando a luz do sol entrar, automaticamente. Na mesa do café da manhã, torradas e sanduíches já estão quentinhos. Tudo isto proporcionado pela automação do D-Guard Intelligence...</p>
+								       		 </div><!-- //medium-7 columns --> 
+										</div><!-- //row --> 
+										<a title="Leia mais" class="more" href="#"> <span>+</span> </a>
+									 </div><!-- //news-entry --> 
+ 						</div><!-- //large-8 columns-->
+
+						<div class="large-4 columns">
+							<div class="spotlight video">
+								<h2> Vídeo </h2>
+								<div class="container-video">
+									<div class="flex-video widescreen"> 
+											<iframe width="560" height="315" src="http://www.youtube.com/embed/N966cATFWjI" frameborder="0" allowfullscreen></iframe> 
+									</div> <!-- //flex-video widescreen-->
+								</div> <!-- //container-video-->
+							</div><!-- //spotlight video-->	
+						</div><!-- //large-4 columns-->
+			</div><!-- // row -->
+	</section> <!-- //section-spotlight -->
+
+
+
+
+	<section class="news">
+			<div class="row">
+				<div class="large-12 columns">
+					<h2 class="topic topic-large "> Notícias </h2>
+				</div><!-- // large-12 columns -->
+
+			             <div class="large-6 columns">
+  							             	<div class="news-entry">
+								        	 	<a href="#" title=""><img src="http://placehold.it/900x350"> </a>
+								        	 	<a href="#" title=""><h4>Seventh automatiza residência com o D-Guard Intelligence</h4></a>
+							 	       		 	<a href="#" class="more" title="Leia mais"> <span>+</span> </a>
+								            </div> <!-- //news-entry --> 
+ 					            </div> <!-- //large-6 columns-->
+
+					             <div class="large-6 columns">
+									
+											<div class="news-entry list">
+												<div class="row collapse">
+													<div class="medium-4 medium-4 hide-for-small">
+														<a href="#" title="" class="alignleft"><img src="http://placehold.it/400x250"> </a>
+													</div><!-- //medium-4 columns --> 
+													<div class="medium-8 columns">
+														<span class="news-date"> 02/09/2014 </span>
+														<a title="" href="#">
+														<h5>Seventh automatiza residência com o D-Guard Intelligence</h5></a>
+													</div><!-- //medium-8 columns --> 
+												</div><!-- //row --> 
+												<a title="Leia mais" class="more" href="#"> <span>+</span> </a>
+											 </div><!-- //news-entry --> 
+										
+											<div class="news-entry list">
+												<div class="row collapse">
+													<div class="medium-4 medium-4 hide-for-small">
+														<a href="#" title="" class="alignleft"><img src="http://placehold.it/400x250"> </a>
+													</div><!-- //medium-4 columns --> 
+													<div class="medium-8 columns">
+														<span class="news-date"> 02/09/2014 </span>
+														<a title="" href="#">
+														<h5>Seventh automatiza residência com o D-Guard Intelligence</h5></a>
+													</div><!-- //medium-8 columns --> 
+												</div><!-- //row --> 
+												<a title="Leia mais" class="more" href="#"> <span>+</span> </a>
+											 </div><!-- //news-entry --> 
+
+											<div class="news-entry list">
+												<div class="row collapse">
+													<div class="medium-4 medium-4 hide-for-small">
+														<a href="#" title="" class="alignleft"><img src="http://placehold.it/400x250"> </a>
+													</div><!-- //medium-4 columns --> 
+													<div class="medium-8 columns">
+														<span class="news-date"> 02/09/2014 </span>
+														<a title="" href="#">
+														<h5>Seventh automatiza residência com o D-Guard Intelligence</h5></a>
+													</div><!-- //medium-8 columns --> 
+												</div><!-- //row --> 
+												<a title="Leia mais" class="more" href="#"> <span>+</span> </a>
+											 </div><!-- //news-entry --> 
+ 					            </div> <!-- //large-6 columns-->
+
+			</div><!-- // row -->
+	</section> <!-- //section-news -->
+
+
+	<section class="info">
+			<div class="row">
+				<div class="large-8 medium-12 columns">
+						 <div id="responsive-tab">          
+						            <ul class="resp-tabs-list">
+						                <li> <h3> Você sabia?</h3> </li>
+						                <li> <h3> Novidades</h3> </li>
+ 						            </ul> <!-- //resp-tabs-list -->
+
+						            <div class="resp-tabs-container">                                                        
+ 						                <div class="content-tab">  
+											<div class="row collapse">
+												<div class="medium-5 hide-for-small">
+													<a href="#" title="" class="alignleft"><img src="images/base-theme/thumbnail.jpg"> </a>
+												</div><!-- //medium-5 columns --> 
+												
+												<div class="medium-7 columns">
+				 										<a href="#" title=""><h3> Você sabia? Lorem ipsum dolor</h3></a>
+									        	 		<p> Você sabia? A família do contador Douglas S. Laranjeira, de Florianópolis, 
+									        	 			acorda todos os dias com as venezianas da casa sendo abertas, deixando a luz do sol entrar, 
+									        	 			automaticamente. Na mesa do café da manhã, torradas e sanduíches já estão quentinhos. 
+									        	 			Tudo isto proporcionado pela Laranjeira, de Florianópolis, acorda todos os dias com as 
+									        	 			venezianas da casa sendo abertas, deixando a luz do sol entrar, automaticamente.
+									        	 			Na mesa do café da manhã, torradas e sanduíches Tudo isto proporcionaautomação do</p>
+									       		 </div><!-- //medium-7 columns --> 
+											</div><!-- //row collapse --> 
+										</div> <!-- //content-tab --> 
+
+				                		<div class="content-tab"> 
+											<div class="row collapse">
+												<div class="medium-5 hide-for-small">
+													<a href="#" title="" class="alignleft"><img src="images/base-theme/thumbnail.jpg"> </a>
+												</div><!-- //medium-5 columns --> 
+												
+												<div class="medium-7 columns">
+				 										<a href="#" title=""><h3> Novidades Lorem ipsum dolor sit</h3></a>
+			        	 									<p> Você sabia? A família do contador Douglas S. Laranjeira, de Florianópolis, 
+									        	 			acorda todos os dias com as venezianas da casa sendo abertas, deixando a luz do sol entrar, 
+									        	 			automaticamente. Na mesa do café da manhã, torradas e sanduíches já estão quentinhos. 
+									        	 			Tudo isto proporcionado pela Laranjeira, de Florianópolis, acorda todos os dias com as 
+									        	 			venezianas da casa sendo abertas, deixando a luz do sol entrar, automaticamente.
+									        	 			Na mesa do café da manhã, torradas e sanduíches Tudo isto proporcionaautomação do</p>									       		 </div><!-- //medium-7 columns --> 
+											</div><!-- //row collapse --> 
+										</div><!-- //content-tab --> 
+
+
+ 						            </div> <!-- //resp-tabs-container -->
+						</div>  <!--// responsive-tab -->  
+    				</div> <!-- //large-8 -->
+
+					<div class="large-4 medium-12 columns widget-agenda">
+						<h2 class="topic topic-large "> Agenda </h2>
+					   	<div class="row collapse">
+								<div class="news-entry list">
+									<div class="row collapse">
+										<!-- //medium-4 columns --> 
+										<div class="large-12 columns">
+											<div class="news-info">
+												<strong>Road Show - 24/09 </strong>
+												<span>Local: Novo Hamburgo (RS) </span>
+											</div> <!-- //news-info --> 
+										</div><!-- //medium-8 columns --> 
+									</div><!-- //row --> 
+									<a title="Leia mais" class="more" href="#"> <span>+</span> </a>
+								 </div> <!-- //news-entry list -->
+
+								<div class="news-entry list">
+									<div class="row collapse">
+										<!-- //medium-4 columns --> 
+										<div class="large-12 columns">
+											<div class="news-info">
+												<strong>Certificação Seventh - 02/10</strong>
+												<span>Local: Seventh - Florianópolis (SC)</span>
+												<span><a href="#">Clique aqui para inscrição</a></span>
+											</div> <!-- //news-info --> 
+										</div><!-- //medium-8 columns --> 
+									</div><!-- //row --> 
+									<a title="Leia mais" class="more" href="#"> <span>+</span> </a>
+								 </div> <!-- //news-entry list -->
+
+								<div class="news-entry list">
+									<div class="row collapse">
+										<!-- //medium-4 columns --> 
+										<div class="large-12 columns">
+											<div class="news-info">
+												<strong>Certificação Seventh - 02/10</strong>
+												<span>Local: Seventh - Florianópolis (SC)</span>
+												<span><a href="#">Clique aqui para inscrição</a></span>
+											</div> <!-- //news-info --> 
+										</div><!-- //medium-8 columns --> 
+									</div><!-- //row --> 
+									<a title="Leia mais" class="more" href="#"> <span>+</span> </a>
+								 </div> <!-- //news-entry list -->
+
+
+								<div class="news-entry list">
+									<div class="row collapse">
+										<!-- //medium-4 columns --> 
+										<div class="large-12 columns">
+											<div class="news-info">
+												<strong>Rio Sec - Feira de Seg. Privada e Eletrônica</strong>
+												<span>Local: Sul América Centro de Convenções</span>
+												<span>15/10 à 17/10 das 14h às 20h.</span>
+											</div> <!-- //news-info --> 
+										</div><!-- //medium-8 columns --> 
+									</div><!-- //row --> 
+									<a title="Leia mais" class="more" href="#"> <span>+</span> </a>
+								 </div> <!-- //news-entry list -->
+
+						</div><!-- //row --> 
+    				</div> <!-- //large-4 -->
+
+
+    							</div> <!-- //row -->
+	</section> <!-- //section-info -->
+
+
+
+	<footer class="footer-main">
+		<div class="row region-footer">
+				<div class="large-2 medium-4 columns">
+						<div class="logo-seventh-secundary large-2 columns">Logotipo Seventh</div>
+			    </div><!-- //large-2 columns-->
+
+
+				<div class="large-2  medium-4 columns">
+						<h6> <strong>Matriz</strong> <span>Florianópolis, SC</span>	</h6>
+						<p>Rodovia SC-401, 8.600 Sala 03, Bloco 02 - Corporate Park. Santo Antônio de 	Lisboa.  88.050-001 (48) 3239-0200</p>    
+				</div><!-- //large-2 columns-->
+
+				<div class="large-2  medium-4 columns">
+						<h6> <strong>Unidade</strong>  <span>São Paulo, SP</span> </h6> 
+						<p>Rua Carlos Petit, 337  Vila Mariana (11) 9 9724-6698</p>   
+						<h6> <strong>Unidade</strong> <span>Ribeirão Preto, SP</span></h6>
+						<p>Telefone Comercial: 16 9213-0884</p>   
+				</div><!-- //large-2 columns-->
+
+				<div class="large-5  medium-8 right columns">
+						<div class="block-twitter">
+							<h6> <strong>Twitties</strong></h6>
+							<p>Veja algumas estratégias de marketing digital bastante relevantes atualmente e o que podem proporcionar à sua empresa <a href="pic.twitter.com/7WThZco5VU" title="acesse"> pic.twitter.com/7WThZco5VU</a>	<span> Posted 21 hours ago</span> </p>   
+				      	</div><!-- //block-twitter -->
+
+						<div class="block-newslatter large-7">
+							<h6> <strong> Seventh Newslatter</strong></h6>
+								<div class="row collapse">
+						       		<div class="small-9 columns">
+						          		<input type="text" placeholder="E-mail">
+						        	</div><!-- //small-9 columns -->
+						        	
+						        	<div class="small-3 columns">
+						          		<span class="postfix radius button">Enviar</span>
+						        	</div><!-- //row collapse-->
+						      </div><!-- //row collapse-->
+				  		</div><!-- //block-twitter -->
+				</div><!-- //large-5 columns-->
+		</div> <!-- //row -->
+	</footer>
+</main>
+
+
+
+<footer class="footer-bottom">
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="copyright"> 
+				<small class="left copyright-text"> Copyright 1980-2013 - Seventh | Visual Control </small> 	
+				<a class="right brand-labbo" title="Criação de sites, Lojas Virtuais e Marketing Digital &ndash; Labbo Ideias Digitais" target="_blank" href="http://www.labbo.com.br/">Labbo </a> 
+			</div> <!-- // copyright -->
+		</div> <!-- //large-12 -->
+	</div> <!-- //row -->
+</footer>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+			<!-- close the off-canvas menu -->  <a class="exit-off-canvas"></a> 
+    	</div> <!-- //inner-wrap -->
+	</div> <!-- //off-canvas-wrap -->
+
+
+ 
+    
+    <script src="javascript/vendor/jquery.js"></script>
+    <script src="javascript/foundation.min.js"></script>
+    <!-- // lib carousel -->  <script src="lib/owl-carousel/owl.carousel.js"></script>
+    <!-- // tab responsive -->  <script src="javascript/easyResponsiveTabs.js"></script>
 
     
+    <script>
+      $(document).foundation();
+    </script>
+            
+     <script src="javascript/script.js"></script>
 
   </body>
 </html>
